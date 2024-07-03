@@ -1,0 +1,3 @@
+GMorning
+GAfternoon
+Gnight
