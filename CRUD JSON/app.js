@@ -5,7 +5,11 @@ import chalk from 'chalk'
 
 let app = express();
 
+app.use  (express.json());
+
 app.use (morgan('tiny'))
+
+dotenv.config({path:"./config/dev.config"})
 
 app.get("/",(req,resp)=>{
     resp.json({"msg":"Root Request"})
